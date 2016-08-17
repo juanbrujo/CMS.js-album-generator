@@ -1,7 +1,7 @@
 {
   "name": "cms.js-album-generator",
   "version": "0.0.1",
-  "description": "scrapes a directory of photos and creates markdown files to being used by cms.js enabled site",
+  "description": "Scrapes a directory of photos and creates markdown files to be used by CMS.js enabled site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
