@@ -1,0 +1,17 @@
+{
+  "name": "cms.js-album-generator",
+  "version": "0.0.1",
+  "description": "scrapes a directory of photos and creates markdown files to being used by cms.js enabled site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Epuñan",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "commander": "^2.9.0",
+    "fs": "0.0.2",
+    "path": "^0.12.7"
+  }
+}
