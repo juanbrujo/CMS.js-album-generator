@@ -1,11 +1,13 @@
 'use strict';
 
-const fs          = require('fs');
-const path        = require('path');
-const program     = require('commander');
+// EDIT AS NEEDED
 const _directory  = '../diegoepunan_com/albums/';
 const _target     = './posts/';
 
+
+const fs          = require('fs');
+const path        = require('path');
+const program     = require('commander');
 
 /**
  * getDirectories( @path )
