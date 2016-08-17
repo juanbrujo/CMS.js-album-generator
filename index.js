@@ -1,10 +1,10 @@
 'use strict';
 
 // EDIT AS NEEDED
-const _directory  = '../diegoepunan_com/albums/';
+const _directory  = '../myphotos/albums/';
 const _target     = './posts/';
 
-
+// KEEP THIS
 const fs          = require('fs');
 const path        = require('path');
 const program     = require('commander');
@@ -24,17 +24,6 @@ function getDirectories( srcpath ) {
  * cleanName( @filename );
  * @filename: directory containing albums names | array
  * return array
-
-function cleanName ( filename ) {
-  let filenames = [];
-
-  if( Object.prototype.toString.call( filename ) === '[object Array]' ) {
-    filename.forEach((value, index) => {
-      filenames.push( value.toLowerCase().substring(4) );
-    });
-  }
-  return filenames;
-}
  */
 function cleanName ( filename ) {
   return filename.toLowerCase().substring(4);
@@ -42,7 +31,9 @@ function cleanName ( filename ) {
 
 
 /**
- *
+ * formatOutput( @imagePath );
+ * @imagePath: full path for image | string
+ * return string
  */
 function formatOutput( imagePath ) {
   let type = '';
@@ -55,6 +46,7 @@ function formatOutput( imagePath ) {
   }
   return `${type}[](${imagePath})\r`;
 }
+
 
 /**
  * getFiles( @dir );
